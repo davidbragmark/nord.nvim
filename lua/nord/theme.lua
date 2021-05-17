@@ -7,6 +7,7 @@ theme.loadSyntax = function ()
 
 	local syntax = {
 		Type =						{ fg = nord.nord9_gui}, -- int, long, char, etc.
+    Identifier =          { fg = nord.nord8_gui },
 		StorageClass =				{ fg = nord.nord9_gui}, -- static, register, volatile, etc.
 		Structure =					{ fg = nord.nord9_gui}, -- struct, union, enum, etc.
 		Constant =					{ fg = nord.nord4_gui}, -- any constant
@@ -35,19 +36,17 @@ theme.loadSyntax = function ()
 		Ignore =					{ fg = nord.disabled }, -- left blank, hidden
 		Error =						{ fg = nord.error, bg = nord.none, style = 'bold,underline' }, -- any erroneous construct
 		Todo =						{ fg = nord.nord13_gui, bg = nord.none, style = 'bold,italic' }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
-
-        htmlLink = { fg = nord.link, style = "underline" },
-        htmlH1 = { fg = nord.cyan, style = "bold" },
-        htmlH2 = { fg = nord.red, style = "bold" },
-        htmlH3 = { fg = nord.green, style = "bold" },
-        htmlH4 = { fg = nord.yellow, style = "bold" },
-        htmlH5 = { fg = nord.purple, style = "bold" },
-        markdownH1 = { fg = nord.cyan, style = "bold" },
-        markdownH2 = { fg = nord.red, style = "bold" },
-        markdownH3 = { fg = nord.green, style = "bold" },
-        markdownH1Delimiter = { fg = nord.cyan },
-        markdownH2Delimiter = { fg = nord.red },
-        markdownH3Delimiter = { fg = nord.green },
+    htmlH1 = { fg = nord.cyan, style = "bold" },
+    htmlH2 = { fg = nord.red, style = "bold" },
+    htmlH3 = { fg = nord.green, style = "bold" },
+    htmlH4 = { fg = nord.yellow, style = "bold" },
+    htmlH5 = { fg = nord.purple, style = "bold" },
+    markdownH1 = { fg = nord.cyan, style = "bold" },
+    markdownH2 = { fg = nord.red, style = "bold" },
+    markdownH3 = { fg = nord.green, style = "bold" },
+    markdownH1Delimiter = { fg = nord.cyan },
+    markdownH2Delimiter = { fg = nord.red },
+    markdownH3Delimiter = { fg = nord.green },
 	}
 
 	syntax.Comment =		{fg = nord.nord3_gui_bright}
@@ -55,7 +54,6 @@ theme.loadSyntax = function ()
 	syntax.Keyword =		{fg = nord.nord9_gui} -- normal for, do, while, etc.
 	syntax.Repeat =			{fg = nord.nord9_gui} -- normal any other keyword
 	syntax.Function =		{fg = nord.nord8_gui}
-	Identifier =			{fg = nord.nord8_gui}; -- any variable name
 
     return syntax
 
