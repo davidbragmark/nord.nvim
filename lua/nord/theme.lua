@@ -302,7 +302,7 @@ theme.loadPlugins = function()
         -- Neogit
         NeogitBranch =                          { fg = nord.paleblue },
         NeogitRemote =                          { fg = nord.purple },
-        NeogitHunkHeader =                      { fg = nord.fg, bg = nord.highlight },
+        NeogitHunkHeader =                      { fg = nord.bg, bg = nord.purple },
         NeogitHunkHeaderHighlight =             { fg = nord.blue, bg = nord.contrast },
         NeogitDiffContextHighlight =            { fg = nord.bg_alt, bg = nord.contrast },
         NeogitDiffDeleteHighlight =             { fg = nord.red },
