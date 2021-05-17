@@ -55,7 +55,7 @@ theme.loadSyntax = function ()
 	syntax.Keyword =		{fg = nord.nord9_gui} -- normal for, do, while, etc.
 	syntax.Repeat =			{fg = nord.nord9_gui} -- normal any other keyword
 	syntax.Function =		{fg = nord.nord8_gui}
-	Identifier =			{fg = nord.nord4_gui}; -- any variable name
+	Identifier =			{fg = nord.nord8_gui}; -- any variable name
 
     return syntax
 
@@ -82,7 +82,7 @@ theme.loadEditor = function ()
 		FoldColumn =			{ fg = nord.blue },
 		IncSearch =				{ fg = nord.highlight, bg = nord.white, style = 'reverse' },
 		LineNr =				{ fg = nord.line_numbers },
-		CursorLineNr =			{ fg = nord.accent },
+		CursorLineNr =			{ fg = nord.nord8_gui },
 		MatchParen =			{ fg = nord.yellow, bg = nord.none, style = 'bold' },
 		ModeMsg =				{ fg = nord.accent },
 		MoreMsg =				{ fg = nord.accent },
@@ -100,7 +100,7 @@ theme.loadEditor = function ()
 		SpellCap =				{ fg = nord.blue, bg = nord.none, style = 'italic,undercurl' },
 		SpellLocal =			{ fg = nord.cyan, bg = nord.none, style = 'italic,undercurl' },
 		SpellRare =				{ fg = nord.purple, bg = nord.none, style = 'italic,undercurl' },
-		StatusLine =			{ fg = nord.fg, bg = nord.contrast },
+		StatusLine =			{ fg = nord.fg, bg = nord.purple },
 		StatusLineNC =  		{ fg = nord.text, bg = nord.disabled },
 		StatusLineTerm =		{ fg = nord.fg, bg = nord.contrast },
 		StatusLineTermNC =		{ fg = nord.text, bg = nord.disabled },
@@ -187,7 +187,7 @@ theme.loadTreeSitter = function ()
         TSConstant =                { fg = nord.pink },    -- For constants
         TSFloat =                   { fg = nord.nord15_gui },    -- For floats
         TSNumber =                  { fg = nord.nord15_gui },    -- For all number
-        TSString =                  { fg = nord.nord14_gui },    -- For strings.
+        TSString =                  { fg = nord.nord14_gui, style = 'italic' },    -- For strings.
 
 	--TSAnnotation =              { fg = nord.red },    -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
         TSAttribute =               { fg = nord.yellow },    -- (unstable) TODO: docs
