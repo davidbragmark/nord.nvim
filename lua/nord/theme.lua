@@ -343,7 +343,7 @@ theme.loadPlugins = function()
         NvimTreeFolderName=                     { fg = nord.paleblue },
         NvimTreeEmptyFolderName=                { fg = nord.disabled },
         NvimTreeFolderIcon=                     { fg = nord.accent },
-        NvimTreeIndentMarker =                  { fg  = nord.disabled },
+        NvimTreeIndentMarker =                  { fg = nord.disabled },
         LspDiagnosticsError =                   { fg = nord.error },
         LspDiagnosticsWarning =                 { fg = nord.yellow },
         LspDiagnosticsInformation =             { fg = nord.paleblue },
@@ -389,7 +389,7 @@ theme.loadPlugins = function()
         SneakScope =                            { bg = nord.selection },
 
         -- Indent Blankline
-        IndentBlanklineChar =                   { fg = nord.highlight },
+        IndentBlanklineChar =                   { fg = nord.disabled },
         IndentBlanklineContextChar =            { fg = nord.disabled },
 
 
