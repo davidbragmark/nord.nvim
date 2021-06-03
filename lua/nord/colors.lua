@@ -66,7 +66,7 @@ end
 if vim.g.nord_cursorline_transparent == true then
     nord.cursorlinefg = nord.bg
 else
-    nord.cursorlinefg = nord.nord1_gui
+    nord.cursorlinefg = nord.nord2_gui
 end
 
 return nord
