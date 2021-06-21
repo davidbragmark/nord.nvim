@@ -31,10 +31,10 @@ theme.loadSyntax = function ()
     Tag =      { fg = nord.nord4_gui}, -- you can use CTRL-] on this
     Delimiter =     { fg = nord.nord6_gui }, -- character that needs attention like , or .
     SpecialComment =    { fg = nord.nord8_gui}, -- special things inside a comment
-    Debug =      { fg = nord.red }, -- debugging statements
     Underlined =     { fg = nord.link, bg = nord.none, style = 'underline' }, -- text that stands out, HTML links
     Ignore =     { fg = nord.disabled }, -- left blank, hidden
     Error =      { fg = nord.error, bg = nord.none, style = 'bold,underline' }, -- any erroneous construct
+    Debug =      { fg = nord.yellow, bg = nord.none, style ='bold,italic' }, -- debugging statements
     Todo =      { fg = nord.nord13_gui, bg = nord.none, style = 'bold,italic' }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
     htmlH1 = { fg = nord.cyan, style = "bold" },
     htmlH2 = { fg = nord.red, style = "bold" },
