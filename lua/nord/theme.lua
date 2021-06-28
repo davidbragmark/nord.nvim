@@ -270,9 +270,9 @@ theme.loadLSP = function ()
         LspDiagnosticsFloatingHint           = { fg = nord.purple  }, -- used for "Hint" diagnostic messages in the diagnostics float
         LspDiagnosticsVirtualTextHint        = { fg = nord.purple  }, -- Virtual text "Hint"
         LspDiagnosticsUnderlineHint          = { style = 'undercurl', sp = nord.paleblue }, -- used to underline "Hint" diagnostics.
-        LspReferenceText                     = { fg = nord.accent, bg = nord.highlight }, -- used for highlighting "text" references
-        LspReferenceRead                     = { fg = nord.accent, bg = nord.highlight }, -- used for highlighting "read" references
-        LspReferenceWrite                    = { fg = nord.accent, bg = nord.highlight }, -- used for highlighting "write" references
+        LspReferenceText                     = { fg = nord.accent, bg = nord.selection }, -- used for highlighting "text" references
+        LspReferenceRead                     = { fg = nord.accent, bg = nord.selection }, -- used for highlighting "read" references
+        LspReferenceWrite                    = { fg = nord.accent, bg = nord.selection }, -- used for highlighting "write" references
     }
 
     return lsp
