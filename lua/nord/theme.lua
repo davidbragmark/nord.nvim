@@ -389,19 +389,23 @@ theme.loadPlugins = function()
         SneakScope                  = { bg = nord.selection },
 
         -- Indent Blankline
-        IndentBlanklineChar         = { fg = nord.disabled },
-        IndentBlanklineContextChar  = { fg = nord.disabled },
+        IndentBlanklineChar        = { fg = nord.disabled },
+        IndentBlanklineContextChar = { fg = nord.disabled },
 
+        LirFloatNormal             = { bg = nord.nord1_gui },
+        LirDir                     = { fg = nord.blue },
+        LirSymLink                 = { fg = nord.green },
+        LirEmptyDirText            = { fg = nord.nord3_gui_bright },
 
     }
     -- Options:
 
     -- Disable nvim-tree background
-        if vim.g.nord_disable_background == true then
-            plugins.NvimTreeNormal = { fg = nord.fg, bg = nord.none }
-        else
-            plugins.NvimTreeNormal = { fg = nord.fg, bg = nord.sidebar }
-        end
+    if vim.g.nord_disable_background == true then
+        plugins.NvimTreeNormal = { fg = nord.fg, bg = nord.none }
+    else
+        plugins.NvimTreeNormal = { fg = nord.fg, bg = nord.sidebar }
+    end
 
     return plugins
 
