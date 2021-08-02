@@ -9,4 +9,6 @@ local set = function()
   util.load()
 end
 
-return { set = set }
+local colorscheme = set
+
+return { set = colorscheme }

@@ -182,24 +182,19 @@ theme.loadTreeSitter = function()
     TSNumber = { fg = nord.nord15_gui }, -- For all number
     TSString = { fg = nord.nord14_gui, style = "italic" }, -- For strings.
 
-    --TSAnnotation              = { fg = nord.red },    -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
     TSAttribute = { fg = nord.yellow }, -- (unstable) TODO: docs
     TSBoolean = { fg = nord.nord9_gui }, -- For booleans.
-    --TSCharacter        = { fg = nord.orange },    -- For characters.
-    --TSConstructor      = { fg = nord.purple }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
-    --TSConstant         = { fg = nord.yellow },    -- For constants
     TSConstBuiltin = { fg = nord.blue }, -- For constant that are built in the language: `nil` in Lua.
     TSConstMacro = { fg = nord.blue }, -- For constants that are defined by macros: `NULL` in C.
     TSError = { fg = nord.error }, -- For syntax/parser errors.
     TSException = { fg = nord.yellow }, -- For exception related keywords.
     TSField = { fg = nord.gray }, -- For fields.
-    --TSFloat            = { fg = nord.red },    -- For floats.
     TSFuncMacro = { fg = nord.blue }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
     TSInclude = { fg = nord.nord9_gui }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
     TSLabel = { fg = nord.nord15_gui }, -- For labels: `label:` in C and `:label:` in Lua.
     TSNamespace = { fg = nord.nord4_gui }, -- For identifiers referring to modules and namespaces.
     --TSNone             = { },    -- TODO: docs
-    --TSNumber           = { fg = nord.orange },    -- For all numbers
+
     TSOperator = { fg = nord.nord9_gui }, -- For any operator: `+`, but also `->` and `*` in C.
     TSParameter = { fg = nord.paleblue }, -- For parameters of a function.
     TSParameterReference = { fg = nord.paleblue }, -- For references to parameters of a function.
@@ -207,7 +202,6 @@ theme.loadTreeSitter = function()
     TSPunctDelimiter = { fg = nord.cyan }, -- For delimiters ie: `.`
     TSPunctBracket = { fg = nord.cyan }, -- For brackets and parens.
     TSPunctSpecial = { fg = nord.cyan }, -- For special punctutation that does not fall in the catagories before.
-    --TSString           = { fg = nord.green },    -- For strings.
     TSStringRegex = { fg = nord.blue }, -- For regexes.
     TSStringEscape = { fg = nord.disabled }, -- For escape characters within a string.
     TSSymbol = { fg = nord.yellow }, -- For identifiers referring to symbols or atoms.
@@ -384,10 +378,20 @@ theme.loadPlugins = function()
     IndentBlanklineChar = { fg = nord.disabled },
     IndentBlanklineContextChar = { fg = nord.disabled },
 
+    -- Lir
     LirFloatNormal = { bg = nord.nord1_gui },
     LirDir = { fg = nord.blue },
     LirSymLink = { fg = nord.green },
     LirEmptyDirText = { fg = nord.nord3_gui_bright },
+
+    -- Hop
+    HopNextKey = { fg = nord.accent, style = "bold" },
+    HopNextKey1 = { fg = nord.nord8_gui, style = "bold" },
+    HopNextKey2 = { fg = nord.accent },
+    HopUnmatched = { fg = nord.comments },
+
+    -- Fern
+    FernBranchText = { fg = nord.nord3_gui_bright },
   }
   -- Options:
 
