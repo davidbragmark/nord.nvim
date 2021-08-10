@@ -8,7 +8,10 @@ local util = require "nord.util"
 local set = function()
   util.load()
 end
+--
+-- Load the theme
+local colorscheme = function()
+  util.load()
+end
 
-local colorscheme = set
-
-return { set = colorscheme }
+return { set = colorscheme or set }
