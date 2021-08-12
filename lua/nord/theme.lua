@@ -68,7 +68,7 @@ theme.loadEditor = function()
     Cursor = { fg = nord.nord5_gui, bg = nord.none, style = "reverse" }, -- the character under the cursor
     CursorIM = { fg = nord.nord5_gui, bg = nord.none, style = "reverse" }, -- like Cursor, but used when in IME mode
     Directory = { fg = nord.nord7_gui, bg = nord.none }, -- directory names (and other special names in listings)
-    DiffAdd = { fg = nord.nord13_gui, bg = nord.none, style = "reverse" }, -- diff mode: Added line
+    DiffAdd = { fg = nord.nord14_gui, bg = nord.none, style = "reverse" }, -- diff mode: Added line
     DiffChange = { fg = nord.nord12_gui, bg = nord.none, style = "reverse" }, --  diff mode: Changed line
     DiffDelete = { fg = nord.nord11_gui, bg = nord.none, style = "reverse" }, -- diff mode: Deleted line
     DiffText = { fg = nord.nord15_gui, bg = nord.none, style = "reverse" }, -- diff mode: Changed text within a changed line
@@ -120,7 +120,7 @@ theme.loadEditor = function()
     Warnings = { fg = nord.nord15_gui },
 
     healthError = { fg = nord.nord11_gui },
-    healthSuccess = { fg = nord.nord13_gui },
+    healthSuccess = { fg = nord.nord14_gui },
     healthWarning = { fg = nord.nord15_gui },
 
     -- dashboard
@@ -276,7 +276,7 @@ theme.loadPlugins = function()
     LspTroubleNormal = { fg = nord.nord4_gui, bg = nord.sidebar },
 
     -- Diff
-    diffAdded = { fg = nord.nord13_gui },
+    diffAdded = { fg = nord.nord14_gui },
     diffRemoved = { fg = nord.nord11_gui },
     diffChanged = { fg = nord.nord15_gui },
     diffOldFile = { fg = nord.nord15_gui },
@@ -292,17 +292,17 @@ theme.loadPlugins = function()
     NeogitHunkHeaderHighlight = { fg = nord.nord7_gui, bg = nord.nord2_gui },
     NeogitDiffContextHighlight = { fg = nord.nord1_gui, bg = nord.nord2_gui },
     NeogitDiffDeleteHighlight = { fg = nord.nord11_gui },
-    NeogitDiffAddHighlight = { fg = nord.nord13_gui },
+    NeogitDiffAddHighlight = { fg = nord.nord14_gui },
 
     -- GitGutter
-    GitGutterAdd = { fg = nord.nord13_gui }, -- diff mode: Added line |diff.txt|
+    GitGutterAdd = { fg = nord.nord14_gui }, -- diff mode: Added line |diff.txt|
     GitGutterChange = { fg = nord.nord15_gui }, -- diff mode: Changed line |diff.txt|
     GitGutterDelete = { fg = nord.nord11_gui }, -- diff mode: Deleted line |diff.txt|
 
     -- GitSigns
-    GitSignsAdd = { fg = nord.nord13_gui }, -- diff mode: Added line |diff.txt|
-    GitSignsAddNr = { fg = nord.nord13_gui }, -- diff mode: Added line |diff.txt|
-    GitSignsAddLn = { fg = nord.nord13_gui }, -- diff mode: Added line |diff.txt|
+    GitSignsAdd = { fg = nord.nord14_gui }, -- diff mode: Added line |diff.txt|
+    GitSignsAddNr = { fg = nord.nord14_gui }, -- diff mode: Added line |diff.txt|
+    GitSignsAddLn = { fg = nord.nord14_gui }, -- diff mode: Added line |diff.txt|
     GitSignsChange = { fg = nord.nord15_gui }, -- diff mode: Changed line |diff.txt|
     GitSignsChangeNr = { fg = nord.nord15_gui }, -- diff mode: Changed line |diff.txt|
     GitSignsChangeLn = { fg = nord.nord15_gui }, -- diff mode: Changed line |diff.txt|
