@@ -288,11 +288,11 @@ theme.loadPlugins = function()
     -- Neogit
     NeogitBranch = { fg = nord.nord10_gui },
     NeogitRemote = { fg = nord.nord9_gui },
-    NeogitHunkHeader = { fg = nord.nord0_gui, bg = nord.nord9_gui },
-    NeogitHunkHeaderHighlight = { fg = nord.nord7_gui, bg = nord.nord2_gui },
-    NeogitDiffContextHighlight = { fg = nord.nord1_gui, bg = nord.nord2_gui },
-    NeogitDiffDeleteHighlight = { fg = nord.nord11_gui },
-    NeogitDiffAddHighlight = { fg = nord.nord14_gui },
+    NeogitHunkHeader = { fg = nord.nord8_gui },
+    NeogitHunkHeaderHighlight = { fg = nord.nord8_gui, bg = nord.nord1_gui },
+    NeogitDiffContextHighlight = { bg = nord.nord1_gui },
+    NeogitDiffDeleteHighlight = { fg = nord.nord11_gui, style = "reverse" },
+    NeogitDiffAddHighlight = { fg = nord.nord14_gui, style = "reverse" },
 
     -- GitGutter
     GitGutterAdd = { fg = nord.nord14_gui }, -- diff mode: Added line |diff.txt|
