@@ -46,41 +46,14 @@ function util.load()
   vim.o.termguicolors = true
   vim.g.colors_name = "nord"
 
-  -- Load plugins, treesitter and lsp async
-  local async
-  async = vim.loop.new_async(vim.schedule_wrap(function()
-    nord.loadTerminal()
-
-    -- imort tables for plugins, treesitter and lsp
-    local plugins = nord.loadPlugins()
-    local treesitter = nord.loadTreeSitter()
-    local lsp = nord.loadLSP()
-
-    -- loop trough the plugins table and highlight every member
-    for group, colors in pairs(plugins) do
-      util.highlight(group, colors)
-    end
-
-    -- loop trough the treesitter table and highlight every member
-    for group, colors in pairs(treesitter) do
-      util.highlight(group, colors)
-    end
-
-    -- loop trough the lsp table and highlight every member
-    for group, colors in pairs(lsp) do
-      util.highlight(group, colors)
-    end
-
-    -- if contrast is enabled, apply it to sidebars and floating windows
-    if vim.g.nord_contrast == true then
-      util.contrast()
-    end
-    async:close()
-  end))
-
   -- load the most importaint parts of the theme
+  nord.loadTerminal()
   local editor = nord.loadEditor()
   local syntax = nord.loadSyntax()
+  local treesitter = nord.loadTreeSitter()
+  local plugins = nord.loadPlugins()
+  local lsp = nord.loadLSP()
+  --
 
   -- load editor highlights
   for group, colors in pairs(editor) do
@@ -92,8 +65,24 @@ function util.load()
     util.highlight(group, colors)
   end
 
-  -- load the rest later ( lsp, treesitter, plugins )
-  async:send()
+  -- imort tables for plugins, treesitter and lsp
+  -- loop trough the treesitter table and highlight every member
+  for group, colors in pairs(treesitter) do
+    util.highlight(group, colors)
+  end
+  -- loop trough the plugins table and highlight every member
+  for group, colors in pairs(plugins) do
+    util.highlight(group, colors)
+  end
+
+  -- loop trough the lsp table and highlight every member
+  for group, colors in pairs(lsp) do
+    util.highlight(group, colors)
+  end
+  -- if contrast is enabled, apply it to sidebars and floating windows
+  if vim.g.nord_contrast == true then
+    util.contrast()
+  end
 end
 
 return util
