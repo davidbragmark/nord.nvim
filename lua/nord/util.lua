@@ -38,10 +38,11 @@ end
 -- Load the theme
 function util.load()
   -- Set the theme environment
-  vim.cmd "hi clear"
-  if vim.fn.exists "syntax_on" then
-    vim.cmd "syntax reset"
+
+  if vim.g.colors_name then
+    vim.cmd "highlight clear"
   end
+
   vim.o.background = "dark"
   vim.o.termguicolors = true
   vim.g.colors_name = "nord"
